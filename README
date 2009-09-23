@@ -1,0 +1,10 @@
+Gives the more-readable `foo.in?(some_list)` rather than having to revert to the more backward `some_list.include?(foo)`. This leads to more-readable conditions, like: `if foo.is_awesome? and foo.in?(allowed_values)`.
+
+Examples:
+
+  "abc".in?("abcdef")         # true
+  "ABC".in?("abcdef")         # false
+  "a".in(%w(a b c d e))       # true
+  1.in?(0..10)                # true
+  1.in?(10..20)               # false
+  1.in?(10)                   # nil, as 10 doesn't respond to :include?
