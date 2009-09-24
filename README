@@ -8,3 +8,11 @@ Examples:
   1.in?(0..10)                # true
   1.in?(10..20)               # false
   1.in?(10)                   # nil, as 10 doesn't respond to :include?
+
+Install:
+
+    # From the command line
+    gem install pbyrne-object-in-enumerable --source=http://gems.github.com
+    
+    # In your Rails project's environment.rb
+    config.gem "pbyrne-object-in-enumerable", :source => "http://gems.github.com", :lib => "object-in-enumerable"
